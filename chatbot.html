@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <header>
+        <meta charset="UTF-8">    
+        <title>chatbot</title>
+        <style>
+            body{
+                background: lightgrey;
+                color: black;
+                font-family:monospace;
+            }
+            .chatbot{
+                background: white;
+                border-radius: 6px;
+                border: 1px solid lightgrey;
+                box-shadow: 1px 2px 4px grey;
+                padding: 30px 30px;
+                margin-left: 1px;
+                margin-right: 60%;
+                margin-bottom: 10px;
+                border-left-color:rgba(70, 119, 70, 0.938); 
+                border-left-width: 5px;
+                float: left;
+            }
+            .user{
+                background: white;
+                border-radius: 6px;
+                border: 1px solid lightgrey;
+                box-shadow: 1px 2px 4px grey;
+                padding: 20px 20px;
+                margin-right: 0px;
+                margin-left: 60%;
+                margin-bottom: 10px;
+                border-left-color: rgb(25, 65, 207); 
+                border-left-width: 5px;
+                float:right;
+                
+            }
+            .heading{
+                background: rgba(70, 119, 70, 0.938);
+                padding: 20px 20px;                
+            }
+            #submitbtn{
+                background: rgba(70, 119, 70, 0.938);
+                color: white;
+                margin-bottom: 10px;
+                font-size: 25px;
+                font-weight: bold;
+                border-radius: 8px;
+                border: none;
+                
+            }
+            #inputSection{
+                position: fixed;
+                top: 89%;
+                z-index: 0.5;
+                width: 100%;
+            }
+            #inputField{
+                background: white;
+                border-radius: 6px;
+                border: 1px solid lightgrey;
+                box-shadow: 1px 2px 4px grey; 
+                font-size: 28;
+                padding: 20px 20px;
+                width: 70%;
+                margin-left: 1px;
+                
+            }
+
+        
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <div id = "main">
+            <div id="headSection" class="heading">
+                <button id = "submitbtn" onclick="startChat()">startChat</button>
+            </div>
+            <!--this is the section for the chats thank you-->
+            <div id="chatSection"></div>
+            
+            <div id="inputSection">
+                <button id = "submitbtn" onclick="userSubmit()">send</button>
+                <form>
+                    <input type="text" id="inputField">
+                </form>
+            </div>
+            
+        </div>
+        <footer></footer>
+        <script src="chatbot.js"></script>
+    </body>
+</html>
